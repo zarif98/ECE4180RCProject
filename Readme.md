@@ -9,6 +9,15 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+# To Do (Delete after)
+
+- Team members
+- parts list
+- schematic
+- source code
+- photos & videoes
+- Powerpoint for video presentation (6 slides max) final slide for further ideas
+
 ## Basic Overview
 
 Build an RC car using the shadow chassis with Xbox controls and Pi cam at the front. The Pi streams video onto a web app
