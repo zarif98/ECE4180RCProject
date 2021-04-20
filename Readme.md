@@ -1,5 +1,5 @@
-<p align="center"><img width=12.5% src="Images/rc.jpg"></p>
-<p align="center"><img width=60% src="Images/title.png"></p>
+<p align="center"><img width=12.5% src="build/images/rc.jpg"></p>
+<p align="center"><img width=60% src="build/images/title.png"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
