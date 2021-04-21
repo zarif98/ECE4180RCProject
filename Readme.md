@@ -177,18 +177,20 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 <br>
 <br>
 
-|           Part Name           | Quantity |
-| :---------------------------: | :------: |
-|         mbed LPC1768          |    1     |
-| Hobby DC Gear Motor - 140 rpm |    2     |
-|     Shadow Robot Chassis      |    1     |
-|    Smartfun Dual H Bridge     |    1     |
-|     HC05 Bluetooth Module     |    1     |
-|        Battery Holder         |    1     |
-|      Xbox One Controller      |    1     |
-|        Raspberry Pi 4         |    1     |
-|     Raspberry Pi Cam V2.1     |    1     |
-|     HC-SR04(Sonar Sensor)     |    2     |
+|            Part Name           | Quantity |
+| :----------------------------: | :------: |
+|         mbed LPC1768           |    1     |
+|  Hobby DC Gear Motor - 140 rpm |    2     |
+|      Shadow Robot Chassis      |    1     |
+|     Sparkfun Dual H Bridge     |    1     |
+|     HC05 Bluetooth Module      |    1     |
+|        Battery Holder          |    1     |
+|      Xbox One Controller       |    1     |
+|        Raspberry Pi 4          |    1     |
+|     Raspberry Pi Cam V2.1      |    1     |
+|     HC-SR04(Sonar Sensor)      |    2     |
+|       Speaker PCB Mount        |    1     |
+|SparkFun Mono Audio Amp Breakout|    1     |
 
 <br>
 <br>
