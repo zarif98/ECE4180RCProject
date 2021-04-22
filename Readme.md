@@ -195,11 +195,43 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 <br>
 <br>
 
-# Pinouts
+# Motors and H-Bridge Pinouts
 
-| Mbed | Dual H-Bridge | DC Motors | Battery |
-| :--: | :-----------: | :-------: | :-----: |
-| Vin  |     Vmot      |           |         |
+| Mbed | Dual H-Bridge | Left DC Motors | Right DC Motors | Battery |
+| :--: | :-----------: | :------------: | :-------------: | :-----: |
+| Vout |   Vcc, STBY   |      nc        |        nc       |    nc   |
+|  nc  |      Vm       |      nc        |        nc       |   6V+   |
+|  GND |      GND      |      nc        |        nc       |   GND   |
+|  P26 |     PWMB      |      nc        |        nc       |    nc   |
+|  P25 |     PWMA      |      nc        |        nc       |    nc   |
+|  P24 |      AI1      |      nc        |        nc       |    nc   |
+|  P23 |      AI2      |      nc        |        nc       |    nc   |
+|  P24 |      BI2      |      nc        |        nc       |    nc   |
+|  P23 |      BI1      |      nc        |        nc       |    nc   |
+|  nc  |      A01      |      nc        |         +       |    nc   |
+|  nc  |      A02      |      nc        |         -       |    nc   |
+|  nc  |      B01      |      nc        |         +       |    nc   |
+|  nc  |      B02      |      nc        |         -       |    nc   |
+
+# Speaker and Mono Audio Amp Pinouts
+
+| Mbed | Mono Audio Amp | Speaker | Battery |
+| :--: | :------------: | :-----: | :-----: |
+| Vin  |     Vmot       |         |         |
+
+# Left Side Sonar Sensor Pinouts
+
+| Mbed | Left HC-SR04 | Battery |
+| :--: | :----------: | :-----: |
+| Vin  |     Vmot     |         |
+
+# Right Side Sonar Sensor Pinouts
+
+| Mbed | Right HC-SR04 | Battery |
+| :--: | :----------: | :-----: |
+| Vin  |     Vmot     |         |
+
+
 
 #### Social Sentiment Scores
 
