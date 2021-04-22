@@ -183,7 +183,6 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |  Hobby DC Gear Motor - 140 rpm |    2     |
 |      Shadow Robot Chassis      |    1     |
 |     Sparkfun Dual H Bridge     |    1     |
-|     HC05 Bluetooth Module      |    1     |
 |        Battery Holder          |    1     |
 |      Xbox One Controller       |    1     |
 |        Raspberry Pi 4          |    1     |
@@ -217,19 +216,29 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 
 | Mbed | Mono Audio Amp | Speaker | Battery |
 | :--: | :------------: | :-----: | :-----: |
-| Vin  |     Vmot       |         |         |
+| P18  |      IN+       |    nc   |    nc   |
+| GND  |    PWR-, IN-   |    nc   |   GND   |
+|  nc  |     OUT+       |     +   |    nc   |
+|  nc  |     OUT-       |     -   |    nc   |
 
 # Left Side Sonar Sensor Pinouts
 
 | Mbed | Left HC-SR04 | Battery |
 | :--: | :----------: | :-----: |
-| Vin  |     Vmot     |         |
+| GND  |     GND      |   GND   |
+|  nc  |     Vcc      |   6V+   |
+|  P6  |    Trig      |    nc   |
+|  P7  |    Echo      |    nc   |
+
 
 # Right Side Sonar Sensor Pinouts
 
 | Mbed | Right HC-SR04 | Battery |
 | :--: | :----------: | :-----: |
-| Vin  |     Vmot     |         |
+| GND  |     GND      |   GND   |
+|  nc  |     Vcc      |   6V+   |
+| P12  |    Trig      |    nc   |
+| P13  |    Echo      |    nc   |
 
 
 
