@@ -220,6 +220,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 | GND  |    PWR-, IN-   |    nc   |   GND   |
 |  nc  |     OUT+       |     +   |    nc   |
 |  nc  |     OUT-       |     -   |    nc   |
+|  nc  |     PWR+       |     -   |   6V+   |
 
 # Left Side Sonar Sensor Pinouts
 
