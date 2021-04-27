@@ -12,7 +12,7 @@
 # To Do (Delete after)
 
 - ~~Team members~~
-- parts list
+- ~~parts list~~
 - schematic
 - source code
 - photos & videoes
