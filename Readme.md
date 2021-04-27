@@ -11,7 +11,7 @@
 
 # To Do (Delete after)
 
-- Team members
+- ~~Team members~~
 - parts list
 - schematic
 - source code
@@ -177,19 +177,20 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 <br>
 <br>
 
-|            Part Name           | Quantity |
-| :----------------------------: | :------: |
-|         mbed LPC1768           |    1     |
-|  Hobby DC Gear Motor - 140 rpm |    2     |
-|      Shadow Robot Chassis      |    1     |
-|     Sparkfun Dual H Bridge     |    1     |
-|        Battery Holder          |    1     |
-|      Xbox One Controller       |    1     |
-|        Raspberry Pi 4          |    1     |
-|     Raspberry Pi Cam V2.1      |    1     |
-|     HC-SR04(Sonar Sensor)      |    2     |
-|       Speaker PCB Mount        |    1     |
-|SparkFun Mono Audio Amp Breakout|    1     |
+|            Part Name             | Quantity |
+| :------------------------------: | :------: |
+|           mbed LPC1768           |    1     |
+|  Hobby DC Gear Motor - 140 rpm   |    2     |
+|       Shadow Robot Chassis       |    1     |
+|      Sparkfun Dual H Bridge      |    1     |
+|          Battery Holder          |    1     |
+|       Xbox One Controller        |    1     |
+|          Raspberry Pi 4          |    1     |
+|      Raspberry Pi Cam V2.1       |    1     |
+|      HC-SR04(Sonar Sensor)       |    2     |
+|        Speaker PCB Mount         |    1     |
+| SparkFun Mono Audio Amp Breakout |    1     |
+|      Anker Portable Battery      |    1     |
 
 <br>
 <br>
@@ -198,29 +199,28 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 
 | Mbed | Dual H-Bridge | Left DC Motors | Right DC Motors | Battery |
 | :--: | :-----------: | :------------: | :-------------: | :-----: |
-| Vout |   Vcc, STBY   |      nc        |        nc       |    nc   |
-|  nc  |      Vm       |      nc        |        nc       |   6V+   |
-|  GND |      GND      |      nc        |        nc       |   GND   |
-|  P26 |     PWMB      |      nc        |        nc       |    nc   |
-|  P25 |     PWMA      |      nc        |        nc       |    nc   |
-|  P24 |      AI1      |      nc        |        nc       |    nc   |
-|  P23 |      AI2      |      nc        |        nc       |    nc   |
-|  P24 |      BI2      |      nc        |        nc       |    nc   |
-|  P23 |      BI1      |      nc        |        nc       |    nc   |
-|  nc  |      A01      |      nc        |         +       |    nc   |
-|  nc  |      A02      |      nc        |         -       |    nc   |
-|  nc  |      B01      |      nc        |         +       |    nc   |
-|  nc  |      B02      |      nc        |         -       |    nc   |
+| Vout |   Vcc, STBY   |       nc       |       nc        |   nc    |
+|  nc  |      Vm       |       nc       |       nc        |   6V+   |
+| GND  |      GND      |       nc       |       nc        |   GND   |
+| P26  |     PWMB      |       nc       |       nc        |   nc    |
+| P25  |     PWMA      |       nc       |       nc        |   nc    |
+| P24  |      AI1      |       nc       |       nc        |   nc    |
+| P23  |      AI2      |       nc       |       nc        |   nc    |
+| P24  |      BI2      |       nc       |       nc        |   nc    |
+| P23  |      BI1      |       nc       |       nc        |   nc    |
+|  nc  |      A01      |       nc       |        +        |   nc    |
+|  nc  |      A02      |       nc       |        -        |   nc    |
+|  nc  |      B01      |       nc       |        +        |   nc    |
+|  nc  |      B02      |       nc       |        -        |   nc    |
 
 # Speaker and Mono Audio Amp Pinouts
 
 | Mbed | Mono Audio Amp | Speaker | Battery |
 | :--: | :------------: | :-----: | :-----: |
-| P18  |      IN+       |    nc   |    nc   |
-| GND  |    PWR-, IN-   |    nc   |   GND   |
-|  nc  |     OUT+       |     +   |    nc   |
-|  nc  |     OUT-       |     -   |    nc   |
-|  nc  |     PWR+       |     -   |   6V+   |
+| P18  |      IN+       |   nc    |   nc    |
+| GND  |   PWR-, IN-    |   nc    |   GND   |
+|  nc  |      OUT+      |    +    |   nc    |
+|  nc  |      OUT-      |    -    |   nc    |
 
 # Left Side Sonar Sensor Pinouts
 
@@ -228,20 +228,17 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 | :--: | :----------: | :-----: |
 | GND  |     GND      |   GND   |
 |  nc  |     Vcc      |   6V+   |
-|  P6  |    Trig      |    nc   |
-|  P7  |    Echo      |    nc   |
-
+|  P6  |     Trig     |   nc    |
+|  P7  |     Echo     |   nc    |
 
 # Right Side Sonar Sensor Pinouts
 
 | Mbed | Right HC-SR04 | Battery |
-| :--: | :----------: | :-----: |
-| GND  |     GND      |   GND   |
-|  nc  |     Vcc      |   6V+   |
-| P12  |    Trig      |    nc   |
-| P13  |    Echo      |    nc   |
-
-
+| :--: | :-----------: | :-----: |
+| GND  |      GND      |   GND   |
+|  nc  |      Vcc      |   6V+   |
+| P12  |     Trig      |   nc    |
+| P13  |     Echo      |   nc    |
 
 #### Social Sentiment Scores
 
@@ -252,10 +249,6 @@ https://github.com/anfederico/Stocktalk
 ```
 
 ## Notes
-
-#### Multivariate Functionality
-
-Remember, more is not always better!
 
 ```python
 variables = ["SSO"]                            # 1 feature
