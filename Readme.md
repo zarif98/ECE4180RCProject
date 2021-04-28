@@ -27,13 +27,13 @@ accessible by anyone on the same wifi network.
 
 ## Streaming and Pi Camera
 
-The RC car is equipped with a Pi cam at the front of the car. The camera is powered by a Raspberry Pi 4. The streaming website is written in Flask and interfaces with the camera. I would recommend running the website on a phone hotspot rather than GT wifi. Your website should look something similar to this:
+The RC car is equipped with a Pi cam at the front of the car. The camera is powered by a Raspberry Pi 4. The streaming website is written in Flask and interfaces with the camera. I would recommend running the website on a phone hotspot rather than GT wifi. Your website address should look something similar to this:
 
 ```
 <raspberry_pi_ip:5000>
 ```
 
-The Pi cam was also equipped motion detection due to the fact that object detection runs at measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps.
+The Pi cam was also equipped with motion detection due to the fact that object detection runs at a measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps. Fork over the Pi Stream folder to run the code and hit main.py
 
 <br>
 
