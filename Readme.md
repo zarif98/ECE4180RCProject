@@ -25,6 +25,12 @@ accessible by anyone on the same wifi network.
 
 <br>
 
+## Latest Development Changes
+
+```bash
+git clone https://github.com/zarif98/ECE4180RCProject.git
+```
+
 ## Streaming and Pi Camera
 
 The RC car is equipped with a Pi cam at the front of the car. The camera is powered by a Raspberry Pi 4. The streaming website is written in Flask and interfaces with the camera. I would recommend running the website on a phone hotspot rather than GT wifi. Your website address should look something similar to this:
@@ -36,12 +42,6 @@ The RC car is equipped with a Pi cam at the front of the car. The camera is powe
 The Pi cam was also equipped with motion detection due to the fact that object detection runs at a measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps. Fork over the Pi Stream folder to run the code and hit main.py
 
 <br>
-
-## Latest Development Changes
-
-```bash
-git clone https://github.com/zarif98/ECE4180RCProject.git
-```
 
 ## Backtesting Signal Accuracy
 
