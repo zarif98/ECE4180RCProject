@@ -40,7 +40,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 ## Latest Development Changes
 
 ```bash
-git clone https://github.com/anfederico/Clairvoyant
+git clone https://github.com/zarif98/ECE4180RCProject.git
 ```
 
 ## Backtesting Signal Accuracy
@@ -76,97 +76,6 @@ backtest.conditions()
 backtest.statistics()
 backtest.visualize('SBUX')
 ```
-
-#### Output
-
-```text
------------- Data Features ------------
-
-X1: EMA
-X2: SSO
-
----------------------------------------
-
------------ Model Arguments -----------
-
-kernel: rbf
-C: 1
-gamma: 10
-
----------------------------------------
-
----------  Engine Conditions ----------
-
-Training: 2013-03-01 -- 2015-12-09
-Testing:  2015-12-10 -- 2017-02-17
-Buy Threshold: 65.0%
-Sell Threshold: 65.0%
-Continued Training: False
-
----------------------------------------
-
-------------- Statistics --------------
-
-Total Buys: 170
-Buy Accuracy: 68.24%
-Total Sells: 54
-Sell Accuracy: 59.3%
-
----------------------------------------
-```
-
-<img src="https://github.com/anfederico/Clairvoyant/blob/master/media/SBUX.png">
-
-## Simulate a Trading Strategy
-
-Once you've established your model can accurately predict price movement a day in advance,
-simulate a portfolio and test your performance with a particular stock. User defined trading logic
-lets you control the flow of your capital based on the model's confidence in its prediction
-and the following next day outcome.
-
-```python
-def logic(account, today, prediction, confidence):
-
-    if prediction == 1:
-        Risk         = 0.30
-        EntryPrice   = today['close']
-        EntryCapital = account.BuyingPower*Risk
-        if EntryCapital >= 0:
-            account.EnterPosition('Long', EntryCapital, EntryPrice)
-
-    if prediction == -1:
-        ExitPrice = today['close']
-        for Position in account.Positions:
-            if Position.Type == 'Long':
-                account.ClosePosition(Position, 1.0, ExitPrice)
-
-
-simulation = backtester.Simulation(features, trainStart, trainEnd, testStart, testEnd, buyThreshold, sellThreshold, continuedTraining)
-simulation.start(data, 1000, logic, kernel='rbf', C=1, gamma=10)
-simulation.statistics()
-simulation.chart('SBUX')
-```
-
-#### Output
-
-```text
-------------- Statistics --------------
-
-Buy and Hold : -6.18%
-Net Profit   : -61.84
-Strategy     : 5.82%
-Net Profit   : 58.21
-Longs        : 182
-Sells        : 168
-Shorts       : 0
-Covers       : 0
---------------------
-Total Trades : 350
-
----------------------------------------
-```
-
-<img src="https://raw.githubusercontent.com/anfederico/Clairvoyant/master/media/Chart.png">
 
 ### Hardware
 
@@ -259,7 +168,7 @@ variables = ["SSO", "SSC", "RSI", ... , "Xn"]  # n features
 
 ## Contributing
 
-Please take a look at our [contributing](https://github.com/anfederico/Clairvoyant/blob/master/CONTRIBUTING.md) guidelines if you're interested in helping!
+Feel free to fork over and utilize our code for future projects. Our goal was to utilize the material that we accumulated over the semester and combine them into one project.
 
 #### Team Members
 
