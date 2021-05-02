@@ -8,8 +8,8 @@ import pygame
 import serial
 
 # Axis config for controller
-leftThumbUpLeftRight = 0                #Joystick Axis Left Thumb
-leftThumbUpDown = 1                     
+rightThumbUpDown = 3                    #Joystick Axis Right Thumb
+leftThumbUpDown = 1                     #Joystick Axis Left Thumb
 leftTrig = 4                            #Joystick Axis Left Trigger
 rightTrig = 5                           #Joystick Axis Right Trigger
 aButton = 0                             #Joystick A Button
@@ -19,13 +19,13 @@ interval = .1                          #Time between keyboard updates in seconds
 # Setup pygame and key states
 global hadEvent
 global moveQuit
-global leftLeftRightVal 
+global rightUpDownVal 
 global leftUpDownVal
 global lTrigVal
 global rTrigVal
 global aVal
 global bVal
-leftLeftRightVal = 0
+rightUpDownVal = 0
 leftUpDownVal = 0
 lTrigVal = -1
 rTrigVal = -1
@@ -45,7 +45,7 @@ def PygameHandler(events):
     # Variables accessible outside this function
     global hadEvent
     global moveQuit
-    global leftLeftRightVal 
+    global rightUpDownVal 
     global leftUpDownVal
     global lTrigVal
     global rTrigVal
@@ -70,7 +70,7 @@ def PygameHandler(events):
         elif event.type == pygame.JOYAXISMOTION:
             # A joystick has been moved, read axis positions (-1 to +1)
             hadEvent = True
-            leftLeftRightVal = joystick.get_axis(leftThumbUpLeftRight)
+            rightUpDownVal = joystick.get_axis(rightThumbUpDown)
             leftUpDownVal = joystick.get_axis(leftThumbUpDown)
             lTrigVal = joystick.get_axis(leftTrig)
             rTrigVal = joystick.get_axis(rightTrig)
@@ -94,7 +94,7 @@ while True:
             break
         # Write to Serial Port values:
         # left thumb x-axis, left thumb y-axis, left trigger, right trigger, a button, b button
-        values = [leftLeftRightVal, leftUpDownVal, lTrigVal, rTrigVal, aVal, bVal]
+        values = [leftUpDownVal, rightUpDownVal, lTrigVal, rTrigVal, aVal, bVal]
         roundedvalues = [0,0,0,0,0,0]
         for i in range(len(values)):
             roundedvalues[i] = round(values[i],2)
