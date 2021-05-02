@@ -34,7 +34,7 @@ git clone https://github.com/zarif98/ECE4180RCProject.git
 ```
 ## Assembling the Shadow Chasis Robot
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/v=aJRYTqZu5OE&t=1s/0.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
+[![Shadow Chasis Assembly Video](https://img.youtube.com/vi/v=aJRYTqZu5OE&t=1s/0.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
 
 
 ## Connecting the Controller
