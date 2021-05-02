@@ -106,7 +106,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 <br>
 <br>
 
-# Motors and H-Bridge Pinouts
+## Motors and H-Bridge Pinouts
 
 | Mbed | Dual H-Bridge | Left DC Motors | Right DC Motors | Battery |
 | :--: | :-----------: | :------------: | :-------------: | :-----: |
@@ -124,7 +124,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |  nc  |      B01      |       nc       |        +        |   nc    |
 |  nc  |      B02      |       nc       |        -        |   nc    |
 
-# Speaker and Mono Audio Amp Pinouts
+## Speaker and Mono Audio Amp Pinouts
 
 | Mbed | Mono Audio Amp | Speaker | Battery |
 | :--: | :------------: | :-----: | :-----: |
@@ -133,7 +133,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |  nc  |      OUT+      |    +    |   nc    |
 |  nc  |      OUT-      |    -    |   nc    |
 
-# Left Side Sonar Sensor Pinouts
+## Left Side Sonar Sensor Pinouts
 
 | Mbed | Left HC-SR04 | Battery |
 | :--: | :----------: | :-----: |
@@ -142,7 +142,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |  P6  |     Trig     |   nc    |
 |  P7  |     Echo     |   nc    |
 
-# Right Side Sonar Sensor Pinouts
+## Right Side Sonar Sensor Pinouts
 
 | Mbed | Right HC-SR04 | Battery |
 | :--: | :-----------: | :-----: |
@@ -150,23 +150,6 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |  nc  |      Vcc      |   6V+   |
 | P12  |     Trig      |   nc    |
 | P13  |     Echo      |   nc    |
-
-#### Social Sentiment Scores
-
-The examples shown use data derived from a project where we are data mining social media and performing stock sentiment analysis. To get an idea of how we do that, please take a look at:
-
-```text
-https://github.com/anfederico/Stocktalk
-```
-
-## Notes
-
-```python
-variables = ["SSO"]                            # 1 feature
-variables = ["SSO", "SSC"]                     # 2 features
-variables = ["SSO", "SSC", "RSI"]              # 3 features
-variables = ["SSO", "SSC", "RSI", ... , "Xn"]  # n features
-```
 
 ## Contributing
 
