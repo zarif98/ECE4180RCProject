@@ -119,8 +119,8 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 | P23  |      AI2      |       nc       |       nc        |   nc    |
 | P24  |      BI2      |       nc       |       nc        |   nc    |
 | P23  |      BI1      |       nc       |       nc        |   nc    |
-|  nc  |      A01      |        +       |       nc        |   nc    |
-|  nc  |      A02      |        -       |       nc        |   nc    |
+|  nc  |      A01      |       +        |       nc        |   nc    |
+|  nc  |      A02      |       -        |       nc        |   nc    |
 |  nc  |      B01      |       nc       |        +        |   nc    |
 |  nc  |      B02      |       nc       |        -        |   nc    |
 
