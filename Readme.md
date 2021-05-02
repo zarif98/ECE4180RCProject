@@ -32,6 +32,7 @@ accessible by anyone on the same wifi network.
 ```bash
 git clone https://github.com/zarif98/ECE4180RCProject.git
 ```
+# Setup
 ## Assembling the Shadow Chasis Robot
 
 [![Shadow Chasis Assembly Video](https://img.youtube.com/vi/v=aJRYTqZu5OE&t=1s/0.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
@@ -43,6 +44,7 @@ Follow these steps to connect the Xbox One controller to the Raspberry Pi:
 ```
 https://pimylifeup.com/xbox-controllers-raspberry-pi/
 ```
+The source code to run the controller can be found in the Pi-Controller folder. The Pi-contoller code looks for 6 different inputs: X and Y of the left analog joystick (for driving), Left and Right Triggers (for moving the camera), and A and B button (for playing sounds). This code runs simultaneously with the Pi camera stream code. 
 
 ## Streaming and Pi Camera
 
@@ -54,13 +56,9 @@ The RC car is equipped with a Pi cam at the front of the car. The camera is powe
 
 The Pi cam was also equipped with motion detection due to the fact that object detection runs at a measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps. Fork over the Pi Stream folder to run the code and hit main.py
 
+# Hardware
 
-
-### Hardware
-
-## Required Parts
-
-The primary purpose of this project is to rapidly test datasets on machine learning algorithms (specifically Support Vector Machines). While the Simulation class allows for basic strategy testing, there are other projects more suited for that task. Once you've tested patterns within your data and simulated a basic strategy, I'd recommend taking your model to the next level with:
+## Parts List
 
 <br>
 <br>
