@@ -18,6 +18,8 @@
 - photos & videoes
 - Powerpoint for video presentation (6 slides max) final slide for further ideas
 
+Checkout the website: http://zarifandr.com/ECE4180RCProject/
+
 ## Basic Overview
 
 Build an RC car using the shadow chassis with Xbox controls and Pi cam at the front. The Pi streams video onto a web app
