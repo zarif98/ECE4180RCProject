@@ -73,15 +73,16 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 |       Xbox One Controller        |    1     |
 |          Raspberry Pi 4          |    1     |
 |      Raspberry Pi Cam V2.1       |    1     |
-|      HC-SR04 (Sonar Sensor)       |    2     |
+|      HC-SR04 (Sonar Sensor)      |    2     |
 |        Speaker PCB Mount         |    1     |
 | SparkFun Mono Audio Amp Breakout |    1     |
 |      Anker Portable Battery      |    1     |
+|        Micro Servo SG90          |    1     |
 
 <br>
 <br>
 
-## Motors and H-Bridge Pinouts
+## Wheel Motors and H-Bridge Pinouts
 
 | Mbed | Dual H-Bridge | Left DC Motors | Right DC Motors | Battery |
 | :--: | :-----------: | :------------: | :-------------: | :-----: |
@@ -90,10 +91,10 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 | GND  |      GND      |       nc       |       nc        |   GND   |
 | P26  |     PWMB      |       nc       |       nc        |   nc    |
 | P25  |     PWMA      |       nc       |       nc        |   nc    |
-| P24  |      AI1      |       nc       |       nc        |   nc    |
+| P20  |      AI1      |       nc       |       nc        |   nc    |
 | P23  |      AI2      |       nc       |       nc        |   nc    |
-| P24  |      BI2      |       nc       |       nc        |   nc    |
-| P23  |      BI1      |       nc       |       nc        |   nc    |
+| P22  |      BI2      |       nc       |       nc        |   nc    |
+| P21  |      BI1      |       nc       |       nc        |   nc    |
 |  nc  |      A01      |       +        |       nc        |   nc    |
 |  nc  |      A02      |       -        |       nc        |   nc    |
 |  nc  |      B01      |       nc       |        +        |   nc    |
@@ -125,6 +126,15 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 |  nc  |      Vcc      |   6V+   |
 | P12  |     Trig      |   nc    |
 | P13  |     Echo      |   nc    |
+
+## Pi Camera Servo Motor
+
+| Mbed | Micro Servo SG90  | Battery |
+| :--: | :---------------: | :-----: |
+| GND  |       Brown       |   GND   |
+|  nc  |        Red        |   6V+   |
+| P24  |       Orange      |   nc    |
+
 
 ## Contributing
 
