@@ -43,41 +43,7 @@ The RC car is equipped with a Pi cam at the front of the car. The camera is powe
 
 The Pi cam was also equipped with motion detection due to the fact that object detection runs at a measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps. Fork over the Pi Stream folder to run the code and hit main.py
 
-<br>
 
-## Backtesting Signal Accuracy
-
-During the testing period, the model signals to buy or sell based on its prediction for price
-movement the following day. By putting your trading algorithm aside and testing for signal accuracy
-alone, you can rapidly build and test more reliable models.
-
-```python
-from clairvoyant.engine import Backtest
-import pandas as pd
-
-features  = ["EMA", "SSO"]   # Financial indicators of choice
-trainStart = 0               # Start of training period
-trainEnd   = 700             # End of training period
-testStart  = 701             # Start of testing period
-testEnd    = 1000            # End of testing period
-buyThreshold  = 0.65         # Confidence threshold for predicting buy (default = 0.65)
-sellThreshold = 0.65         # Confidence threshold for predicting sell (default = 0.65)
-continuedTraining = False    # Continue training during testing period? (default = false)
-
-# Initialize backtester
-backtest = Backtest(features, trainStart, trainEnd, testStart, testEnd, buyThreshold, sellThreshold, continuedTraining)
-
-# A little bit of pre-processing
-data = pd.read_csv("SBUX.csv", date_parser=['date'])
-data = data.round(3)
-
-# Start backtesting and optionally modify SVC parameters
-# Available paramaters can be found at: http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
-backtest.start(data, kernel='rbf', C=1, gamma=10)
-backtest.conditions()
-backtest.statistics()
-backtest.visualize('SBUX')
-```
 
 ### Hardware
 
@@ -98,7 +64,7 @@ The primary purpose of this project is to rapidly test datasets on machine learn
 |       Xbox One Controller        |    1     |
 |          Raspberry Pi 4          |    1     |
 |      Raspberry Pi Cam V2.1       |    1     |
-|      HC-SR04(Sonar Sensor)       |    2     |
+|      HC-SR04 (Sonar Sensor)       |    2     |
 |        Speaker PCB Mount         |    1     |
 | SparkFun Mono Audio Amp Breakout |    1     |
 |      Anker Portable Battery      |    1     |
