@@ -32,6 +32,17 @@ accessible by anyone on the same wifi network.
 ```bash
 git clone https://github.com/zarif98/ECE4180RCProject.git
 ```
+## Assembling the Shadow Chasis Robot
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/v=aJRYTqZu5OE&t=1s/0.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
+
+
+## Connecting the Controller
+
+Follow these steps to connect the Xbox One controller to the Raspberry Pi:
+```
+https://pimylifeup.com/xbox-controllers-raspberry-pi/
+```
 
 ## Streaming and Pi Camera
 
