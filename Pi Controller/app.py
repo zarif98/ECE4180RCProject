@@ -10,8 +10,8 @@ import serial
 # Axis config for controller
 rightThumbUpDown = 3                    #Joystick Axis Right Thumb
 leftThumbUpDown = 1                     #Joystick Axis Left Thumb
-leftTrig = 4                            #Joystick Axis Left Trigger
-rightTrig = 5                           #Joystick Axis Right Trigger
+leftTrig = 5                            #Joystick Axis Left Trigger
+rightTrig = 4                           #Joystick Axis Right Trigger
 aButton = 0                             #Joystick A Button
 bButton = 1                             #Joystick B Button
 interval = .1                          #Time between keyboard updates in seconds, smaller responds faster but uses more processor time
@@ -94,7 +94,7 @@ while True:
             break
         # Write to Serial Port values:
         # left thumb x-axis, left thumb y-axis, left trigger, right trigger, a button, b button
-        values = [leftUpDownVal, rightUpDownVal, lTrigVal, rTrigVal, aVal, bVal]
+        values = [-leftUpDownVal, -rightUpDownVal, lTrigVal, rTrigVal, aVal, bVal]
         roundedvalues = [0,0,0,0,0,0]
         for i in range(len(values)):
             roundedvalues[i] = round(values[i],2)
