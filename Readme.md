@@ -37,6 +37,7 @@ git clone https://github.com/zarif98/ECE4180RCProject.git
 
 ## Assembling the Shadow Chasis Robot
 
+Click on the image below to watch the video guide
 [![SparkFun - Shadow Chassis Assembly Guide](https://i.imgur.com/7mptFid.jpeg)](http://www.youtube.com/watch?v=aJRYTqZu5OE&t "SparkFun - Shadow Chassis Assembly Guide")
 
 ## Connecting the Controller
