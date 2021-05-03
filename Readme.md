@@ -46,6 +46,8 @@ git clone https://github.com/zarif98/ECE4180RCProject.git
 <br>
 [![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
+[![Watch the video](https://img.youtube.com/vi/aJRYTqZu5OE&t/maxresdefault.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
+
 ## Connecting the Controller
 
 Follow these steps to connect the Xbox One controller to the Raspberry Pi:
