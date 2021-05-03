@@ -32,19 +32,26 @@ accessible by anyone on the same wifi network.
 ```bash
 git clone https://github.com/zarif98/ECE4180RCProject.git
 ```
+
 # Setup
+
 ## Assembling the Shadow Chasis Robot
 
 [![Shadow Chasis Assembly Video](https://img.youtube.com/vi/v=aJRYTqZu5OE&t=1s/0.jpg)](https://www.youtube.com/watch?v=aJRYTqZu5OE&t=1s)
 
+[![HelloWorld](http://img.youtube.com/vi/aJRYTqZu5OE&t/0.jpg)](http://www.youtube.com/watch?v=aJRYTqZu5OE&t "Video Title")
+
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
 ## Connecting the Controller
 
 Follow these steps to connect the Xbox One controller to the Raspberry Pi:
+
 ```
 https://pimylifeup.com/xbox-controllers-raspberry-pi/
 ```
-The source code to run the controller can be found in the Pi-Controller folder. The Pi-contoller code looks for 6 different inputs: X and Y of the left analog joystick (for driving), Left and Right Triggers (for moving the camera), and A and B button (for playing sounds). This code runs simultaneously with the Pi camera stream code. 
+
+The source code to run the controller can be found in the Pi-Controller folder. The Pi-contoller code looks for 6 different inputs: X and Y of the left analog joystick (for driving), Left and Right Triggers (for moving the camera), and A and B button (for playing sounds). This code runs simultaneously with the Pi camera stream code.
 
 ## Streaming and Pi Camera
 
@@ -77,7 +84,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 |        Speaker PCB Mount         |    1     |
 | SparkFun Mono Audio Amp Breakout |    1     |
 |      Anker Portable Battery      |    1     |
-|        Micro Servo SG90          |    1     |
+|         Micro Servo SG90         |    1     |
 
 <br>
 <br>
@@ -129,12 +136,11 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 
 ## Pi Camera Servo Motor
 
-| Mbed | Micro Servo SG90  | Battery |
-| :--: | :---------------: | :-----: |
-| GND  |       Brown       |   GND   |
-|  nc  |        Red        |   6V+   |
-| P24  |       Orange      |   nc    |
-
+| Mbed | Micro Servo SG90 | Battery |
+| :--: | :--------------: | :-----: |
+| GND  |      Brown       |   GND   |
+|  nc  |       Red        |   6V+   |
+| P24  |      Orange      |   nc    |
 
 ## Contributing
 
