@@ -69,7 +69,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 
 |            Part Name             | Quantity |
 | :------------------------------: | :------: |
-|           mbed LPC1768           |    1     |
+|           mbed LPC1768           |    2     |
 |  Hobby DC Gear Motor - 140 rpm   |    2     |
 |       Shadow Robot Chassis       |    1     |
 |      Sparkfun Dual H Bridge      |    1     |
@@ -88,60 +88,61 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 
 ## Wheel Motors and H-Bridge Pinouts
 
-| Mbed | Dual H-Bridge | Left DC Motors | Right DC Motors | Battery |
-| :--: | :-----------: | :------------: | :-------------: | :-----: |
-| Vout |   Vcc, STBY   |       nc       |       nc        |   nc    |
-|  nc  |      Vm       |       nc       |       nc        |   6V+   |
-| GND  |      GND      |       nc       |       nc        |   GND   |
-| P26  |     PWMB      |       nc       |       nc        |   nc    |
-| P25  |     PWMA      |       nc       |       nc        |   nc    |
-| P20  |      AI1      |       nc       |       nc        |   nc    |
-| P23  |      AI2      |       nc       |       nc        |   nc    |
-| P22  |      BI2      |       nc       |       nc        |   nc    |
-| P21  |      BI1      |       nc       |       nc        |   nc    |
-|  nc  |      A01      |       +        |       nc        |   nc    |
-|  nc  |      A02      |       -        |       nc        |   nc    |
-|  nc  |      B01      |       nc       |        +        |   nc    |
-|  nc  |      B02      |       nc       |        -        |   nc    |
+| Mbed 1 | Dual H-Bridge | Left DC Motors | Right DC Motors | Pin 2 on Pi | Pin 6 on Pi |
+| :----: | :-----------: | :------------: | :-------------: | :---------: | :---------: |
+|  Vout  |   Vcc, STBY   |       nc       |       nc        |      nc     |      nc     |
+|   nc   |      Vm       |       nc       |       nc        |      5V+    |      nc     |
+|  GND   |      GND      |       nc       |       nc        |      nc     |     GND     |
+|  P26   |     PWMB      |       nc       |       nc        |      nc     |      nc     |
+|  P25   |     PWMA      |       nc       |       nc        |      nc     |      nc     |
+|  P20   |      AI1      |       nc       |       nc        |      nc     |      nc     |
+|  P23   |      AI2      |       nc       |       nc        |      nc     |      nc     |
+|  P22   |      BI2      |       nc       |       nc        |      nc     |      nc     |
+|  P21   |      BI1      |       nc       |       nc        |      nc     |      nc     |
+|   nc   |      A01      |       +        |       nc        |      nc     |      nc     |
+|   nc   |      A02      |       -        |       nc        |      nc     |      nc     |
+|   nc   |      B01      |       nc       |        +        |      nc     |      nc     |
+|   nc   |      B02      |       nc       |        -        |      nc     |      nc     |
 
 ## Speaker and Mono Audio Amp Pinouts
 
-| Mbed | Mono Audio Amp | Speaker | Battery |
-| :--: | :------------: | :-----: | :-----: |
-| P18  |      IN+       |   nc    |   nc    |
-| GND  |   PWR-, IN-    |   nc    |   GND   |
-|  nc  |      OUT+      |    +    |   nc    |
-|  nc  |      OUT-      |    -    |   nc    |
+| Mbed 2 | Mono Audio Amp | Speaker | Pin 2 on Pi | Pin 6 on Pi |
+| :----: | :------------: | :-----: | :---------: | :---------: |
+|  P18   |      IN+       |   nc    |      nc     |      nc     |
+|  GND   |   PWR-, IN-    |   nc    |      nc     |     GND     |
+|   nc   |      OUT+      |    +    |      nc     |      nc     |
+|   nc   |      OUT-      |    -    |      nc     |      nc     |
+|   nc   |      PWR+      |   nc    |     5V+     |      nc     |
 
 ## Left Side Sonar Sensor Pinouts
 
-| Mbed | Left HC-SR04 | Battery |
-| :--: | :----------: | :-----: |
-| GND  |     GND      |   GND   |
-|  nc  |     Vcc      |   6V+   |
-|  P6  |     Trig     |   nc    |
-|  P7  |     Echo     |   nc    |
+| Mbed 2 | Left HC-SR04 | Pin 2 on Pi | Pin 6 on Pi |
+| :----: | :----------: | :---------: | :---------: |
+|  GND   |     GND      |      nc     |     GND     |
+|   nc   |     Vcc      |     5V+     |      nc     |
+|   P6   |     Trig     |      nc     |      nc     |
+|   P7   |     Echo     |      nc     |      nc     |
 
 ## Right Side Sonar Sensor Pinouts
 
-| Mbed | Right HC-SR04 | Battery |
-| :--: | :-----------: | :-----: |
-| GND  |      GND      |   GND   |
-|  nc  |      Vcc      |   6V+   |
-| P12  |     Trig      |   nc    |
-| P13  |     Echo      |   nc    |
+| Mbed 2 | Right HC-SR04 | Pin 2 on Pi | Pin 6 on Pi |
+| :----: | :-----------: | :---------: | :---------: |
+|  GND   |      GND      |      nc     |     GND     |
+|   nc   |      Vcc      |     5V+     |      nc     |
+|  P12   |     Trig      |      nc     |      nc     |
+|  P13   |     Echo      |      nc     |      nc     |
 
 ## Pi Camera Servo Motor
 
-| Mbed | Micro Servo SG90 | Battery |
-| :--: | :--------------: | :-----: |
-| GND  |      Brown       |   GND   |
-|  nc  |       Red        |   6V+   |
-| P24  |      Orange      |   nc    |
+| Mbed 1 | Micro Servo SG90 | Pin 2 on Pi | Pin 6 on Pi |
+| :----: | :--------------: | :---------: | :---------: |
+|  GND   |      Brown       |      nc     |     GND     |
+|   nc   |       Red        |     5V+     |      nc     |
+|  P24   |      Orange      |      nc     |      nc     |
 
 ## Contributing
 
-Feel free to fork over and utilize our code for future projects. Our goal was to utilize the material that we accumulated over the semester and combine them into one project.
+Feel free to fork over and utilize our code for future projects. Our goal was to utilize the material that we accumulated over the semester in our embedded systems class and combine the skills we learned into one project.
 
 #### Team Members
 
