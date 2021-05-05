@@ -141,7 +141,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 |  P24   |      Orange      |      nc     |      nc     |
 
 ##  Pi Camera Servo Mount
-The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it.
+The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it. The STereoLithography (STL) file and inventor file are included on the GitHub page.
 
 # Contributing
 
