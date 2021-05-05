@@ -140,7 +140,10 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 |   nc   |       Red        |     5V+     |      nc     |
 |  P24   |      Orange      |      nc     |      nc     |
 
-## Contributing
+##  Pi Camera Servo Mount
+The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it.
+
+# Contributing
 
 Feel free to fork over and utilize our code for future projects. Our goal was to utilize the material that we accumulated over the semester in our embedded systems class and combine the skills we learned into one project.
 
