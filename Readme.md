@@ -9,15 +9,6 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# To Do (Delete after)
-
-- ~~Team members~~
-- ~~parts list~~
-- schematic
-- source code
-- photos & videoes
-- Powerpoint for video presentation (6 slides max) final slide for further ideas
-
 Checkout the website: http://zarifandr.com/ECE4180RCProject/
 
 ## Basic Overview
