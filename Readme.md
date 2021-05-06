@@ -92,7 +92,8 @@ class VideoCamera(object):
 
 # Mbed Code
 
-This is the code for the first mbed we used. This mbed was used to process the Pi serial commands that controlled the H-bridge for the two motors as well as the servo motor.
+## Mbed 1: Servo and DC Motors
+This is the code for the first mbed we used. This mbed was used to process the Pi serial commands from the Xbox controller that controlled the H-bridge for the two motors as well as the servo motor.
 
 ```
 #include "mbed.h" // using namespace mbed; from Lab3-4_BT
@@ -167,7 +168,52 @@ int main() {
     }
 }
 ```
+## Mbed 2: Sonar and Sound
+This is the code for the second mbed we used. This mbed controlled the two sonars to trigger a "honk" if an object gets within a half of an inch of the RC car.
+```
+#include "mbed.h" // using namespace mbed; from Lab3-4_BT
+#include "Motor.h" // #include "motordriver.h" // equivalent to DCMotor.h from class... might be more useful
+#include "ultrasonic.h"
+#include <stdlib.h>
+#include <string.h>
+#include "Speaker.h"
 
+Speaker speaker(p18);
+
+void dist(int distance) // left
+{
+    //put code here to execute when the distance has changed
+    float x = float(distance)*(0.00328084);
+    if (x  < .5) {
+        speaker.PlayNote(500, 0.5, 0.5);
+    }
+}
+
+void dist1(int distance) // right
+{
+    //put code here to execute when the distance has changed
+    float x = float(distance)*(0.00328084);
+    if (x  < .5) {
+        speaker.PlayNote(500, 0.5, 0.5);
+    }    
+}
+
+ultrasonic mu_left(p6, p7, .1, 1, &dist);
+ultrasonic mu_right(p12, p13, .1, 1, &dist1);
+
+int main() {
+    
+    mu_left.startUpdates();
+    mu_right.startUpdates();
+    
+    while(1) {
+        mu_right.checkDistance();
+        mu_left.checkDistance();
+    }
+    
+    
+}
+```
 # Hardware
 
 ## Parts List
