@@ -22,8 +22,7 @@ Checkout the website: http://zarifandr.com/ECE4180RCProject/
 
 ## Basic Overview
 
-Build an RC car using the shadow chassis with Xbox controls and Pi cam at the front. The Pi streams video onto a web app
-accessible by anyone on the same wifi network.
+We built an RC car using the shadow chassis that was controlled with Xbox controls that were processed by the Raspberry Pi 4. There was also a Pi camera mounted on the front of the car on a servo motor that will turn.The Pi video stream is accessible on a web app accessible by anyone on the same wifi network. Two sonar systems where mounted on the left and right side. If the sonars sensed anything on the sides of the car, it would cause the speakers to "honk".
 
 <br>
 
@@ -209,9 +208,7 @@ int main() {
     while(1) {
         mu_right.checkDistance();
         mu_left.checkDistance();
-    }
-    
-    
+    }   
 }
 ```
 # Hardware
