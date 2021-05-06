@@ -90,62 +90,63 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 
 | Mbed 1 | Dual H-Bridge | Left DC Motors | Right DC Motors | Pin 2 on Pi | Pin 6 on Pi |
 | :----: | :-----------: | :------------: | :-------------: | :---------: | :---------: |
-|  Vout  |   Vcc, STBY   |       nc       |       nc        |      nc     |      nc     |
-|   nc   |      Vm       |       nc       |       nc        |      5V+    |      nc     |
-|  GND   |      GND      |       nc       |       nc        |      nc     |     GND     |
-|  P26   |     PWMB      |       nc       |       nc        |      nc     |      nc     |
-|  P25   |     PWMA      |       nc       |       nc        |      nc     |      nc     |
-|  P20   |      AI1      |       nc       |       nc        |      nc     |      nc     |
-|  P23   |      AI2      |       nc       |       nc        |      nc     |      nc     |
-|  P22   |      BI2      |       nc       |       nc        |      nc     |      nc     |
-|  P21   |      BI1      |       nc       |       nc        |      nc     |      nc     |
-|   nc   |      A01      |       +        |       nc        |      nc     |      nc     |
-|   nc   |      A02      |       -        |       nc        |      nc     |      nc     |
-|   nc   |      B01      |       nc       |        +        |      nc     |      nc     |
-|   nc   |      B02      |       nc       |        -        |      nc     |      nc     |
+|  Vout  |   Vcc, STBY   |       nc       |       nc        |     nc      |     nc      |
+|   nc   |      Vm       |       nc       |       nc        |     5V+     |     nc      |
+|  GND   |      GND      |       nc       |       nc        |     nc      |     GND     |
+|  P26   |     PWMB      |       nc       |       nc        |     nc      |     nc      |
+|  P25   |     PWMA      |       nc       |       nc        |     nc      |     nc      |
+|  P20   |      AI1      |       nc       |       nc        |     nc      |     nc      |
+|  P23   |      AI2      |       nc       |       nc        |     nc      |     nc      |
+|  P22   |      BI2      |       nc       |       nc        |     nc      |     nc      |
+|  P21   |      BI1      |       nc       |       nc        |     nc      |     nc      |
+|   nc   |      A01      |       +        |       nc        |     nc      |     nc      |
+|   nc   |      A02      |       -        |       nc        |     nc      |     nc      |
+|   nc   |      B01      |       nc       |        +        |     nc      |     nc      |
+|   nc   |      B02      |       nc       |        -        |     nc      |     nc      |
 
 ## Speaker and Mono Audio Amp Pinouts
 
 | Mbed 2 | Mono Audio Amp | Speaker | Pin 2 on Pi | Pin 6 on Pi |
 | :----: | :------------: | :-----: | :---------: | :---------: |
-|  P18   |      IN+       |   nc    |      nc     |      nc     |
-|  GND   |   PWR-, IN-    |   nc    |      nc     |     GND     |
-|   nc   |      OUT+      |    +    |      nc     |      nc     |
-|   nc   |      OUT-      |    -    |      nc     |      nc     |
-|   nc   |      PWR+      |   nc    |     5V+     |      nc     |
+|  P18   |      IN+       |   nc    |     nc      |     nc      |
+|  GND   |   PWR-, IN-    |   nc    |     nc      |     GND     |
+|   nc   |      OUT+      |    +    |     nc      |     nc      |
+|   nc   |      OUT-      |    -    |     nc      |     nc      |
+|   nc   |      PWR+      |   nc    |     5V+     |     nc      |
 
 ## Left Side Sonar Sensor Pinouts
 
 | Mbed 2 | Left HC-SR04 | Pin 2 on Pi | Pin 6 on Pi |
 | :----: | :----------: | :---------: | :---------: |
-|  GND   |     GND      |      nc     |     GND     |
-|   nc   |     Vcc      |     5V+     |      nc     |
-|   P6   |     Trig     |      nc     |      nc     |
-|   P7   |     Echo     |      nc     |      nc     |
+|  GND   |     GND      |     nc      |     GND     |
+|   nc   |     Vcc      |     5V+     |     nc      |
+|   P6   |     Trig     |     nc      |     nc      |
+|   P7   |     Echo     |     nc      |     nc      |
 
 ## Right Side Sonar Sensor Pinouts
 
 | Mbed 2 | Right HC-SR04 | Pin 2 on Pi | Pin 6 on Pi |
 | :----: | :-----------: | :---------: | :---------: |
-|  GND   |      GND      |      nc     |     GND     |
-|   nc   |      Vcc      |     5V+     |      nc     |
-|  P12   |     Trig      |      nc     |      nc     |
-|  P13   |     Echo      |      nc     |      nc     |
+|  GND   |      GND      |     nc      |     GND     |
+|   nc   |      Vcc      |     5V+     |     nc      |
+|  P12   |     Trig      |     nc      |     nc      |
+|  P13   |     Echo      |     nc      |     nc      |
 
 ## Pi Camera Servo Motor
 
 | Mbed 1 | Micro Servo SG90 | Pin 2 on Pi | Pin 6 on Pi |
 | :----: | :--------------: | :---------: | :---------: |
-|  GND   |      Brown       |      nc     |     GND     |
-|   nc   |       Red        |     5V+     |      nc     |
-|  P24   |      Orange      |      nc     |      nc     |
+|  GND   |      Brown       |     nc      |     GND     |
+|   nc   |       Red        |     5V+     |     nc      |
+|  P24   |      Orange      |     nc      |     nc      |
 
-##  Pi Camera Servo Mount
+## Pi Camera Servo Mount
+
 The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it. The STereoLithography (STL) file and inventor file are included on the GitHub page.
 
 # Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TS9khvXI--E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![SparkFun - Shadow Chassis Assembly Guide](https://i.imgur.com/vhX6k4y.png)](https://www.youtube.com/watch?v=TS9khvXI--E "SparkFun - Shadow Chassis Assembly Guide")
 
 # Presentation
 
