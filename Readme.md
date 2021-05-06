@@ -60,6 +60,36 @@ The RC car is equipped with a Pi cam at the front of the car. The camera is powe
 
 The Pi cam was also equipped with motion detection due to the fact that object detection runs at a measly 2fps on the Pi 4. We can maintain our 24fps on the Raspi 4 with motion detection running at 5fps. Fork over the Pi Stream folder to run the code and hit main.py
 
+<br>
+Here's our Camera.py code. For more information click on the Pi-camera -stream-flask folder
+
+```
+import cv2
+from imutils.video.pivideostream import PiVideoStream
+import imutils
+import time
+import numpy as
+
+class VideoCamera(object):
+    def __init__(self, flip = False):
+        self.vs = PiVideoStream().start()
+        self.flip = flip
+        time.sleep(2.0)
+
+    def __del__(self):
+        self.vs.stop()
+
+    def flip_if_needed(self, frame):
+        if self.flip:
+            return np.flip(frame, 0)
+        return frame
+
+    def get_frame(self):
+        frame = self.flip_if_needed(self.vs.read())
+        ret, jpeg = cv2.imencode('.jpg', frame)
+        return jpeg.tobytes()
+```
+
 # Hardware
 
 ## Parts List
@@ -143,6 +173,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 ## Pi Camera Servo Mount
 
 The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it. The mount was 3D printed at the Invention Studio in the MDCR. It was mounted to the microservo motor using a screw. The STereoLithography (STL) file and inventor file are included on the GitHub page.
+
 <p align="center"><img width=50% src="build/images/3D print 1.jpg"></p>
 <p align="center"><img width=50% src="build/images/mount.jpg"></p>
 
