@@ -143,7 +143,7 @@ The Pi cam was also equipped with motion detection due to the fact that object d
 ## Pi Camera Servo Mount
 
 The pi camera servo mount was designed based off an existing servo mount but it was extend to include a semi-circle base that contained the pi camera mount on it. The mount was 3D printed at the Invention Studio in the MDCR. It was mounted to the microservo motor using a screw. The STereoLithography (STL) file and inventor file are included on the GitHub page.
-![3D print 1](https://user-images.githubusercontent.com/30091910/117229926-fd161480-ade9-11eb-8185-ce859723f3fb.jpg)
+![3D print 1](https://user-images.githubusercontent.com/30091910/117229926-fd161480-ade9-11eb-8185-ce859723f3fb.jpg / width="200" height="400")
 ![mount](https://user-images.githubusercontent.com/30091910/117230109-5120f900-adea-11eb-9001-0903fdd04e84.jpg)
 
 # Demo
