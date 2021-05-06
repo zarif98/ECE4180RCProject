@@ -89,8 +89,11 @@ class VideoCamera(object):
         ret, jpeg = cv2.imencode('.jpg', frame)
         return jpeg.tobytes()
 ```
+
 # Mbed Code
+
 This is the code for the first mbed we used. This mbed was used to process the Pi serial commands that controlled the H-bridge for the two motors as well as the servo motor.
+
 ```
 #include "mbed.h" // using namespace mbed; from Lab3-4_BT
 #include "Motor.h" // #include "motordriver.h" // equivalent to DCMotor.h from class... might be more useful
@@ -115,7 +118,7 @@ Serial pi(USBTX, USBRX); // RawSerial
 //Speaker speaker(p18); // double declare/use of p18 ?
 //
 DigitalOut mbed_led1(LED1);
-DigitalOut mbed_led2(LED2); 
+DigitalOut mbed_led2(LED2);
 //
 const int MAX_BUFFER_SIZE = 128; // max number of possible chars -> pow2
 char buffer[MAX_BUFFER_SIZE];
@@ -126,14 +129,14 @@ bool left = true;
 
 int main() {
     mbed_led1 = 1;
-    
+
 //    motor_left.speed(-.5);
 //    motor_right.speed(-.5);
 //    wait(1);
 //    motor_left.speed(0);
 //    motor_right.speed(0);
     pi.baud(9600);
-//    //speaker.PlayNote(500, 0.01, 0.5); // freq, dur, vol   
+//    //speaker.PlayNote(500, 0.01, 0.5); // freq, dur, vol
 ////    uLCD.printf("connection established\n\r");
     while(1) {
         mbed_led1 = !mbed_led1;
@@ -166,15 +169,15 @@ int main() {
             buffer_to_int[i] = atof(s.c_str());
 //            uLCD.printf("%.3f\n", buffer_to_int[i]);
         }
-        
-//        
+
+//
 
 //        motor_left.speed(0.5);
 //        motor_right.speed(0.5);
 //        wait(1);
         motor_left.speed(buffer_to_int[0]);
         motor_right.speed(-buffer_to_int[1]);
-//        
+//
 //        float turn_left_cam = buffer_to_int[2];
 //        float turn_right_cam = buffer_to_int[3];
 //        if (turn_left_cam < 0 || turn_right_cam < 0 || // not triggering
@@ -182,18 +185,18 @@ int main() {
 //                cam_servo == 0.0 && turn_left_cam > 0 || // max left
 //                cam_servo == 1.0 && turn_right_cam > 0) { // max right
 //
-//            float increm = (turn_left_cam > 0 ? -1 * cam_servo * 0.1 : -(1-cam_servo) * 0.1);            
+//            float increm = (turn_left_cam > 0 ? -1 * cam_servo * 0.1 : -(1-cam_servo) * 0.1);
 //            float new_pos = cam_servo + increm;
 //            cam_servo = (new_pos > 1.0 ? 1.0 : (new_pos < 0.0 ? 0.0 : new_pos));
 //        }
     }
 }
 ```
+
 # Hardware
 
 ## Parts List
 
-<br>
 <br>
 
 |            Part Name             | Quantity |
