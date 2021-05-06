@@ -303,6 +303,8 @@ The pi camera servo mount was designed based off an existing servo mount but it 
 
 # Presentation
 
+[![RC Car Presentation](https://img.youtube.com/vi/KlX4RG750h4/0.jpg)](https://www.youtube.com/watch?v=KlX4RG750h4 "RC Car Presentation")
+
 # Contributing
 
 Feel free to fork over and utilize our code for future projects. Our goal was to utilize the material that we accumulated over the semester in our embedded systems class and combine the skills we learned into one project.
