@@ -146,7 +146,7 @@ The pi camera servo mount was designed based off an existing servo mount but it 
 
 # Demo
 
-[![RC Car Demo](https://v=TS9khvXI--E.png)](https://www.youtube.com/watch?v=TS9khvXI--E "SparkFun - Shadow Chassis Assembly Guide")
+[![RC Car Demo](https://www.youtube.com/watch?v=TS9khvXI--E.jpg)](https://www.youtube.com/watch?v=TS9khvXI--E "RC Car Demo")
 
 # Presentation
 
