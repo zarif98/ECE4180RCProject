@@ -146,7 +146,7 @@ The pi camera servo mount was designed based off an existing servo mount but it 
 
 # Demo
 
-[![RC Car Demo](https://www.img.youtube.com/watch?v=TS9khvXI--E.jpg)](https://www.youtube.com/watch?v=TS9khvXI--E "RC Car Demo")
+[![RC Car Demo](https://www.img.youtube.com/vi/TS9khvXI--E/0.jpg)](https://www.youtube.com/watch?v=TS9khvXI--E "RC Car Demo")
 
 # Presentation
 
